@@ -5860,6 +5860,8 @@ body {
     margin-bottom: 85px; }
     #header .navbar-default-positive .container-positive h1 .linc-logo {
       margin-bottom: 26px; }
+#header .nav li a:hover, #header .nav li a:focus {
+  background: transparent; }
 #header .link-dropdown-positive {
   color: #555152;
   font: 0.938rem/0.938rem "Lato Black";
@@ -5867,7 +5869,7 @@ body {
   #header .link-dropdown-positive:hover,
   #header .link-dropdown-positive :active {
     color: #7aa52a;
-    background: #ffffff; }
+    background: transparent; }
 #header .hover-dropdown-menu {
   background: #acaaaa; }
   #header .hover-dropdown-menu:before {
@@ -5952,7 +5954,7 @@ body {
 .section-content .text-top-left {
   font: 500 1.562rem/1.75rem Lato;
   color: #92c256;
-  text-align: center;
+  text-align: right;
   padding-bottom: 10px; }
 .section-content .text-top-right {
   font: 500 1rem/1.4rem Sans-serif;
@@ -6044,10 +6046,11 @@ body {
   .col-content .content-title-calendar {
     display: block;
     background: #fdcd05;
-    color: #545051;
     padding: 10px;
     margin: 0 -15px 20px;
     text-align: center; }
+    .col-content .content-title-calendar a {
+      color: #545051; }
   .col-content .bg {
     background: #e6e5e5;
     border: dotted #cbc9ca; }
@@ -6090,6 +6093,8 @@ body {
       color: #ffffff; }
     #footer .footer-duluth span {
       display: block; }
+      #footer .footer-duluth span a {
+        color: #656263; }
   #footer .footer-midtown {
     color: #656263; }
     #footer .footer-midtown .title-footer-midtown {
@@ -6097,6 +6102,8 @@ body {
       background: #ff8a00; }
     #footer .footer-midtown span {
       display: block; }
+      #footer .footer-midtown span a {
+        color: #656263; }
   #footer .form-footer {
     text-align: center;
     background: #e6e6e6;
@@ -6132,7 +6139,10 @@ body {
     font-size: 13px; }
 
   .section-welcome .menu .li-menu-stutic a {
-    width: 100px; } }
+    width: 100px; }
+
+  #footer .footer-top .text-footer {
+    font: 1rem Lato; } }
 @media (min-width: 768px) {
   .menu {
     display: flex;
@@ -6145,10 +6155,12 @@ body {
         text-align: center; }
       .menu .li-menu-stutic:last-child {
         border-right: 1px solid white; }
-      .menu .li-menu-stutic:hover .menu-hover {
-        position: absolute;
-        z-index: 500;
-        width: 410px; } }
+      .menu .li-menu-stutic:hover {
+        background: transparent; }
+        .menu .li-menu-stutic:hover .menu-hover {
+          position: absolute;
+          z-index: 500;
+          width: 410px; } }
 @media (min-width: 992px) and (max-width: 1199px) {
   html {
     font-size: 15px; } }

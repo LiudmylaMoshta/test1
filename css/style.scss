@@ -80,7 +80,15 @@ body{
             }
         }
     }
-
+    .nav {
+        li {
+            a {
+                &:hover, &:focus {
+                    background: transparent;
+                }
+            }
+        }
+    }
     .link-dropdown-positive{
         color:#555152;
         font: 0.938rem/0.938rem "Lato Black";
@@ -88,7 +96,7 @@ body{
         &:hover,
         :active{
             color:#7aa52a;
-            background: #ffffff;
+            background: transparent;
         }
     }
     .hover-dropdown-menu{
@@ -215,7 +223,7 @@ body{
     .text-top-left{
         font:500 1.562rem/1.75rem Lato;
         color: #92c256;
-        text-align: center;
+        text-align: right;
         padding-bottom: 10px;
     }
     .text-top-right{
@@ -334,10 +342,12 @@ body{
    .content-title-calendar{
        display: block;
        background: #fdcd05;
-       color: #545051 ;
        padding: 10px;
        margin: 0 -15px 20px;
        text-align: center;
+       a{
+           color: #545051 ;
+       }
    }
     .bg{
         background: #e6e5e5;
@@ -398,6 +408,9 @@ body{
         }
         span{
             display: block;
+            a{
+                color: #656263;
+            }
         }
     }
     .footer-midtown{
@@ -408,6 +421,9 @@ body{
         }
         span{
             display: block;
+            a{
+                color: #656263;
+            }
         }
     }
     .form-footer{
@@ -464,6 +480,14 @@ body{
             }
         }
     }
+    #footer {
+        .footer-top{
+            .text-footer{
+                font: 1rem Lato;
+            }
+        }
+    }
+
 }
 
 @media (min-width: 768px) {
@@ -482,6 +506,7 @@ body{
                 border-right: 1px solid white;
             }
             &:hover{
+                background: transparent;
                 .menu-hover{
                     position: absolute;
                     z-index: 500;
